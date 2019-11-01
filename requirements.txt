@@ -4,9 +4,13 @@ celery==4.3.0
 Django==2.2.6
 django-celery-beat==1.5.0
 django-timezone-field==3.1
+easy-thumbnails==2.6
+gunicorn==19.9.0
 importlib-metadata==0.23
 kombu==4.6.5
 more-itertools==7.2.0
+mysqlclient==1.4.4
+Pillow==6.2.1
 python-crontab==2.4.0
 python-dateutil==2.8.0
 pytz==2019.3

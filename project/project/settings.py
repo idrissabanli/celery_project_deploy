@@ -86,8 +86,12 @@ CELERY_TASK_SERIALIZER = 'json'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'deploy_db_name',
+        'USER': 'deploy_db_user',
+        'PASSWORD': 'Myw8VVn8oOPzldO2dis6pyrAb',
+        'PORT': '3306',
+        'HOST': '127.0.0.1',
     }
 }
 
