@@ -1,0 +1,7 @@
+location /static/ {
+    alias   /dr_agro_backed/static/;
+}
+
+location /media/ {
+    alias   /dr_agro_backed/media/;
+}
