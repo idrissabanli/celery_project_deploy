@@ -16,6 +16,15 @@ services:
       MYSQL_USER: deploy_db_user
       MYSQL_PASSWORD: Myw8VVn8oOPzldO2dis6pyrAb
 
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: nginx-proxy
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+
 #  redis:
 #    image: redis:3.0.6
 #    restart: "on-failure"
